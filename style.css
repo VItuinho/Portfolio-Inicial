@@ -1,0 +1,59 @@
+body {
+    background: url(imagens/Vazio-de-Bootes-1.png);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    float: right;
+}
+
+#menu a {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+#menu {
+    margin: 15px;
+}
+
+#menu a:hover {
+    background: gainsboro;
+    color: black;
+    border-radius: 10px;
+}
+
+#conteudo img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 200px;
+}
+
+#conteudo {
+    color: white;
+    text-align: center;
+}
+
+#topo h2 {
+    margin: 0px;
+    padding: 15px;
+    color: white;
+}
+
+#topo {
+    background: rgb(63, 63, 63);
+}
+
+#habilidades {
+    text-align: center;
+}
