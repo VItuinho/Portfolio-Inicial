@@ -54,6 +54,17 @@ body {
     background: rgb(63, 63, 63);
 }
 
-#habilidades {
+#habilidades h1 {
     text-align: center;
+    font-size: 50px;
+}
+
+#htmlcssjs {
+    background: gray;
+    border-radius: 15px;
+}
+
+#experiencias {
+    text-align: center;
+    font-size: 25px;
 }
