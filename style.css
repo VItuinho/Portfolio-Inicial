@@ -3,7 +3,7 @@ body {
     background-position: center;
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     border-radius: 10px;
     margin: 0;
@@ -59,12 +59,52 @@ body {
     font-size: 50px;
 }
 
-#htmlcssjs {
+#htmlcssjs, #mysql, #csharp, #git {
+    width: 1100px;
     background: gray;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
 }
 
 #experiencias {
     text-align: center;
     font-size: 25px;
+}
+
+.nivel {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 50px;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+#portaldacidade, #gazinbank {
+    display: flex;
+    flex-direction: column;
+    background: gray;
+    width: 1500px;
+    height: 200px;
+    border-radius: 15px;
+    justify-content: center;    
+    gap: 20px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+
+#gazinbank, #portaldacidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
 }
