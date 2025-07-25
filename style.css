@@ -32,6 +32,12 @@ body {
     border-radius: 10px;
 }
 
+#menu a:active {
+    background: gainsboro;
+    color: black;
+    border-radius: 10px;
+}
+
 #conteudo img {
     width: 200px;
     margin: 0 auto;
@@ -60,13 +66,29 @@ body {
 }
 
 #htmlcssjs, #mysql, #csharp, #git {
-    width: 1100px;
+    width: 800px;
     background: gray;
     border-radius: 15px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 15px auto;
+}
 
+@keyframes bonitinho {
+    from {
+        background: gray;
+        left: -500px;
+    }
+    to {
+        background: gray;
+
+        left: 0px;
+    }
+}
+
+#csharp, #mysql, #git, #htmlcssjs, #portaldacidade, #gazinbank {
+    position: relative;
+    animation: bonitinho 5s 1s;
 }
 
 #experiencias {
@@ -107,4 +129,8 @@ body {
     justify-content: center;
     text-align: justify;
     align-items: center;
+}
+
+#gazinbank img {
+    width: 350px;
 }
