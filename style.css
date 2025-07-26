@@ -1,5 +1,5 @@
 body {
-    background: url(imagens/Vazio-de-Bootes-1.png);
+    background: url(imagens/fundo5.png);
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -22,6 +22,7 @@ body {
     color: white;
     padding: 10px;
 }
+
 #menu {
     margin: 15px;
 }
@@ -32,23 +33,44 @@ body {
     border-radius: 10px;
 }
 
-#menu a:active {
-    background: gainsboro;
-    color: black;
-    border-radius: 10px;
+@keyframes imagem {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 250px;
+    }
 }
 
 #conteudo img {
-    width: 200px;
+    width: 250px;
     margin: 0 auto;
     display: block;
     margin-top: 200px;
+    position: relative;
+    animation: imagem 4s;
 }
+
 
 #conteudo {
     color: white;
     text-align: center;
+    font-size: 25px;
+    animation: fadeSlide 3s ease-out;
 }
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 #topo h2 {
     margin: 0px;
@@ -65,7 +87,10 @@ body {
     font-size: 50px;
 }
 
-#htmlcssjs, #mysql, #csharp, #git {
+#htmlcssjs,
+#mysql,
+#csharp,
+#git {
     width: 800px;
     background: gray;
     border-radius: 15px;
@@ -79,6 +104,7 @@ body {
         background: gray;
         left: -500px;
     }
+
     to {
         background: gray;
 
@@ -86,9 +112,14 @@ body {
     }
 }
 
-#csharp, #mysql, #git, #htmlcssjs, #portaldacidade, #gazinbank {
+#csharp,
+#mysql,
+#git,
+#htmlcssjs,
+#portaldacidade,
+#gazinbank {
     position: relative;
-    animation: bonitinho 5s 1s;
+    animation: bonitinho 4s;
 }
 
 #experiencias {
@@ -108,14 +139,15 @@ body {
     width: fit-content;
 }
 
-#portaldacidade, #gazinbank {
+#portaldacidade,
+#gazinbank {
     display: flex;
     flex-direction: column;
     background: gray;
     width: 1500px;
     height: 200px;
     border-radius: 15px;
-    justify-content: center;    
+    justify-content: center;
     gap: 20px;
     margin: 10px auto;
     padding: 10px;
@@ -123,14 +155,75 @@ body {
 
 
 
-#gazinbank, #portaldacidade {
+#gazinbank,
+#portaldacidade {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: justify;
     align-items: center;
+    
 }
 
 #gazinbank img {
     width: 350px;
+}
+
+#projetos img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35px;
+}
+
+#projetos img:hover {
+    border: 10px solid gray;
+}
+
+#foto {
+    height: 500px;
+    width: 500px;
+}
+
+#foto img {
+    display: flex;
+    object-fit: cover;
+    border-radius: 100%;
+
+    margin-left: 300px;
+    margin-top: 300px;
+    height: 350px;
+    width: 350px;
+}
+
+#conteudo-sobre {
+    display: flex;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    width: 800px;
+    height: 240px;
+    float: right;
+    margin: -450px 250px;
+}
+
+#conteudo-sobre p {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#habilidades a.hab,
+#home a.hom,
+#projeto a.pro {
+    background: gainsboro;
+    color: black;
+    border-radius: 10px;
 }
