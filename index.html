@@ -7,12 +7,38 @@
     <title>Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 </head>
 
 <body id="home">
 
-    <button id="menu-btn">
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Portifolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="habilidades.html">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projetos.html">Projetos</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="CV Vituinho.pdf">CV Vituinho.pdf</a>
+        </li>
+    
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- <button id="menu-btn">
         <i class="fa fa-bars"></i>
     </button>
     <nav id="menu" style="display: none;">
@@ -20,13 +46,14 @@
         <a href="habilidades.html">Habilidades</a>
         <a href="projetos.html">Projetos</a>
         <a href="CV Vituinho.pdf" download="CV Vituinho.pdf">CV</a>
-    </nav>
-
+    </nav> -->
+<!-- 
     <div id="topo">
         <h2>Victor Emanuel da Silva Moraes</h2>
-    </div>
+    </div> -->
 
     <div id="conteudo">
+        
         <img src="imagens/baixados.png" alt="imagem minha">
 
         <h1>Victor Emanuel da Silva Moraes</h1>
@@ -36,5 +63,5 @@
 
 </body>
 <script src="portfolio.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
