@@ -61,14 +61,15 @@ body {
 }
 
 @keyframes fadeSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -162,7 +163,7 @@ body {
     justify-content: center;
     text-align: justify;
     align-items: center;
-    
+
 }
 
 #gazinbank img {
@@ -226,4 +227,51 @@ body {
     background: gainsboro;
     color: black;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #portaldacidade,
+  #gazinbank {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  #gazinbank img,
+  #portaldacidade img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  #conteudo-sobre {
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #conteudo-sobre p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #foto img {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+  }
+
+  #projetos img {
+    width: 100%;
+    height: auto;
+  }
+
+  #habilidades h1,
+  #experiencias {
+    font-size: 30px;
+  }
 }
