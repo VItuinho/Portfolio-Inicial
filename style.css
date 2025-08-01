@@ -174,7 +174,7 @@ body {
     display: flex;
     flex-direction: column;
     background: gray;
-    width: 90%;
+    width: 60%;
     height: auto;
     border-radius: 15px;
     justify-content: center;
@@ -195,18 +195,16 @@ body {
 
 #gazinbank img,
 #portaldacidade img {
-    width: 100%;
-    max-width: 380px;
+    min-width: 450px;
     margin: 0 auto;
     padding-right: 5px;
     height: 100%;
 }
 
 #gazinbank img {
-    width: 100%;
+    width: 950px;
     height: 150px;
     object-fit: cover;
-    display: block;
 }
 
 #projetos img {
