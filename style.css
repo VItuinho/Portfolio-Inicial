@@ -1,7 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    overflow-x: hidden;
     background: url(imagens/fundo5.png);
     background-position: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     background-repeat: repeat-y;
     background-size: cover;
@@ -43,7 +51,7 @@ body {
     }
 }
 
-#conteudo img {
+#home #conteudo img {
     width: 250px;
     margin: 0 auto;
     display: block;
@@ -58,6 +66,7 @@ body {
     text-align: center;
     font-size: 25px;
     animation: fadeSlide 3s ease-out;
+    overflow: hidden;
 }
 
 @keyframes fadeMenu {
@@ -143,6 +152,7 @@ body {
     font-size: 25px;
 }
 
+
 .nivel {
     display: flex;
     width: fit-content;
@@ -155,21 +165,23 @@ body {
     width: fit-content;
 }
 
+#habilidades h1 {
+    margin-top: 15px;
+}
+
 #portaldacidade,
 #gazinbank {
     display: flex;
     flex-direction: column;
     background: gray;
-    width: 1500px;
-    height: 200px;
+    width: 90%;
+    height: auto;
     border-radius: 15px;
     justify-content: center;
     gap: 20px;
     margin: 10px auto;
     padding: 10px;
 }
-
-
 
 #gazinbank,
 #portaldacidade {
@@ -181,8 +193,20 @@ body {
 
 }
 
+#gazinbank img,
+#portaldacidade img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding-right: 5px;
+    height: 100%;
+}
+
 #gazinbank img {
-    width: 350px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
 }
 
 #projetos img {
@@ -190,7 +214,6 @@ body {
     height: 400px;
     margin: 10px;
     box-sizing: border-box;
-
 }
 
 #projetos {
@@ -246,15 +269,15 @@ body {
 }
 
 #menu-btn {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 10px;
     float: right;
     cursor: pointer;
 }
 
-#menu-btn img {
+#menu-btn {
     width: 30px;
-    height: auto;
+    height: 25px;
 }
 
 /* Parte de Responsividade Mobile*/
