@@ -123,6 +123,7 @@ body {
     animation: bonitinho 4s;
 }
 
+
 #experiencias {
     text-align: center;
     font-size: 25px;
@@ -229,49 +230,95 @@ body {
     border-radius: 10px;
 }
 
+/* Parte de Responsividade Mobile*/
+
 @media (max-width: 768px) {
-  #portaldacidade,
-  #gazinbank {
-    width: 90%;
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
 
-  #gazinbank img,
-  #portaldacidade img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
+    #portaldacidade,
+    #gazinbank {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
 
-  #conteudo-sobre {
-    width: 90%;
-    margin: 20px auto;
-    float: none;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
+    #gazinbank img,
+    #portaldacidade img {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        padding-right: 5px;
+    }
 
-  #conteudo-sobre p {
-    font-size: 16px;
-    padding: 10px;
-  }
+    #gazinbank img {
+        width: 380px;
+        height: 100px;
+        object-fit: cover;
+        /* Faz ela não se redimensionar mesmo com o height tão baixo */
+    }
 
-  #foto img {
-    width: 200px;
-    height: 200px;
-    margin: 10px auto;
-  }
+    #gazinbank p,
+    #portaldacidade p {
+        margin: 0;
+        text-align: center;
+    }
 
-  #projetos img {
-    width: 100%;
-    height: auto;
-  }
 
-  #habilidades h1,
-  #experiencias {
-    font-size: 30px;
-  }
+    #conteudo-sobre {
+        width: 90%;
+        margin: 20px auto;
+        float: none;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #conteudo-sobre p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #foto img {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    #projetos img {
+        width: 100%;
+        height: auto;
+    }
+
+    #habilidades h1,
+    #experiencias {
+        font-size: 30px;
+    }
+
+    #habilidades #htmlcssjs,
+    #habilidades #mysql,
+    #habilidades #csharp,
+    #habilidades #git {
+        max-width: 93%;
+        height: 150px;
+    }
+
+    #habilidades img {
+        width: 150px;
+    }
+
+    .nivel {
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        font-size: 28px;
+        width: fit-content;
+        margin-top: 60px;
+    }
+
+    #projeto #projetos a {
+        max-width: 85%;
+    }
 }
