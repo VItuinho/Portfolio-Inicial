@@ -121,6 +121,15 @@ body {
     display: flex;
     justify-content: center;
     margin: 15px auto;
+    padding: 0px;
+
+}
+
+#htmlcssjs img,
+#mysql img,
+#csharp img,
+#git img {
+    width: 100%;
 }
 
 @keyframes bonitinho {
@@ -161,6 +170,7 @@ body {
     text-align: center;
     gap: 20px;
     font-size: 50px;
+    font-weight: bolder;
     margin: 30px auto;
     width: fit-content;
 }
@@ -313,11 +323,11 @@ body {
 
 /* Parte de Responsividade Mobile*/
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
 
 
     #carouselExampleCaptions {
-        width: 100%;
+        width: 95%;
         max-width: 900px;
         /* largura máxima no desktop */
         aspect-ratio: 16 / 9;
@@ -325,15 +335,18 @@ body {
         margin: auto;
         overflow: hidden;
         border-radius: 12px;
-        margin: 0 auto;
         justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     .carousel-inner img {
         width: 95%;
         height: 100%;
         object-fit: cover;
-        margin-top: 50%;
+        margin: auto;
+        justify-content: center;
+        
     }
 
 
