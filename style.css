@@ -207,17 +207,15 @@ body {
 
 #gazinbank img,
 #portaldacidade img {
-    min-width: 450px;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
     margin: 0 auto;
     padding-right: 5px;
-    height: 100%;
+    object-fit: contain;
 }
 
-#gazinbank img {
-    width: 950px;
-    height: 150px;
-    object-fit: cover;
-}
+
 
 #projetos img {
     width: 600px;
@@ -421,7 +419,7 @@ body {
     }
 
     #habilidades #habilidades img {
-        width: 150px;
+        width: 200px;
     }
 
     .nivel {
