@@ -122,7 +122,6 @@ body {
     justify-content: center;
     margin: 15px auto;
     padding: 0px;
-
 }
 
 @keyframes bonitinho {
@@ -179,20 +178,12 @@ body {
     align-items: center;
     background: gray;
     width: 60%;
-    height: auto;
+    height: 200px;
     border-radius: 15px;
     justify-content: flex-start;
     gap: 20px;
     margin: 10px auto;
     padding: 20px;
-}
-
-#gazinbank img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 15px;
 }
 
 #gazinbank,
@@ -208,11 +199,12 @@ body {
 #gazinbank img,
 #portaldacidade img {
     width: 100%;
+    min-width: 260px;
     max-width: 380px;
     height: auto;
     margin: 0 auto;
     padding-right: 5px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
@@ -419,7 +411,7 @@ body {
     }
 
     #habilidades #habilidades img {
-        width: 200px;
+        width: 170px;
     }
 
     .nivel {
@@ -429,7 +421,7 @@ body {
         align-items: center;
         text-align: center;
         gap: 10px;
-        font-size: 28px;
+        font-size: 25px;
         width: fit-content;
         margin-top: 60px;
     }
